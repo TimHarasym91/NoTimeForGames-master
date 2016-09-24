@@ -95,11 +95,16 @@ document.onreadystatechange = function () {
                     'left'
                 );
             }
+            else if(entity === coinBlock) {
+            //  player.canMoveUp = false;
+            }
+
 
         });
 
         playerLayer.registerCollidable(player);
         itemLayer.registerCollidable(coin);
+        itemLayer.registerCollidable(coinBlock);
 
         var score = 0;
         var scoreLayer = game.createLayer("score");
